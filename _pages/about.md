@@ -36,6 +36,7 @@ Google Email: 📫 linbin203279@gmail.com
 
 # 🔥 News
 <!-- Allowed emojis: 🎉🎉for good news 📣📣for average news-->
+- **2025.07**: &nbsp;🎉🎉 One paper have been accepted by **IEEE Transactions on Multimedia (TMM)**! <a href='https://github.com/PKU-YuanGroup/MoE-LLaVA'>MoE-LLaVA</a>！
 - **2025.06**: &nbsp;📣📣 The <a href='https://github.com/PKU-YuanGroup/Open-Sora-Plan'>Open-Sora Plan</a> has released version 1.5 and reached **12,000 stars** on GitHub. At the same time, we are launching <a href='https://github.com/PKU-YuanGroup/UniWorld-V1'>UniWorld-V1</a>!
 - **2025.03**: &nbsp;📣📣 Thrilled that <a href='https://github.com/PKU-YuanGroup/Video-LLaVA'>Video-LLaVA</a> ranks in **Top 1** of the <a href='https://resources.paperdigest.org/2025/03/most-influential-emnlp-papers-2025-03-version'>Most Influential EMNLP 2025 Papers</a>！
 - **2025.02**: &nbsp;🎉🎉 One paper have been accepted by **CVPR 2025**! <a href='https://github.com/PKU-YuanGroup/WF-VAE'>WF-VAE</a>！
@@ -112,7 +113,7 @@ Google Email: 📫 linbin203279@gmail.com
 
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/moe-llava.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE Transactions on Multimedia</div><img src='images/moe-llava.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [MoE-LLaVA: Mixture of Experts for Large Vision-Language Models](https://arxiv.org/abs/2401.15947)
