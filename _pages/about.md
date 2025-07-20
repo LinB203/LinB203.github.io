@@ -28,7 +28,7 @@ GitHub: 🐙 [GitHub](https://github.com/LinB203) (full open-source codes).
 
 Hugging Face: 🤗 [Hugging Face](https://huggingface.co/LanguageBind) (full open-source models & datasets).
 
-PKU Email: 📫 linbin.ece@std.pku.edu.cn
+PKU Email: 📫 linbin.ece@stu.pku.edu.cn
 
 Google Email: 📫 linbin203279@gmail.com
 
