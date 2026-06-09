@@ -1,17 +1,29 @@
 # main links links
 main:
-  - title: "About Me"
+  - title: "About"
+    title_zh: "关于"
     url: "/#about-me"
 
   - title: "News"
-    url: "/#-news"
+    title_zh: "动态"
+    url: "/#news"
+
+  - title: "Work"
+    title_zh: "工作"
+    url: "/#work"
 
   - title: "Publications"
-    url: "/#-selected-publications"
+    title_zh: "论文"
+    url: "/#publications"
 
-  - title: "Honors and Awards"
-    url: "/#-honors-and-awards"
+  - title: "Open Source"
+    title_zh: "开源"
+    url: "/#opensource"
 
-  - title: "Educations"
-    url: "/#-educations"
+  - title: "Awards"
+    title_zh: "奖项"
+    url: "/#awards"
 
+  - title: "Education"
+    title_zh: "教育"
+    url: "/#education"

@@ -12,48 +12,112 @@ layout: compress
   <body>
 
     {% include browser-upgrade.html %}
+    <div class="scroll-progress"><span id="scroll-progress-bar"></span></div>
     {% include masthead.html %}
 
     <div id="main" role="main">
       {% include sidebar.html %}
-    
+
       <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
         {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
         <div class="page__inner-wrap">
           <section class="page__content" itemprop="text">
             {{ content }}
           </section>
+          <div class="site-footer-custom">
+            &copy; {{ site.time | date: '%Y' }} Bin Lin (林彬) &middot; Last updated {{ site.time | date: '%b %d, %Y' }}
+          </div>
         </div>
       </article>
     </div>
 
+    <div class="top-controls">
+      <div class="theme-switch" id="theme-switch" role="group" aria-label="Accent color">
+        <button type="button" class="theme-dot" data-theme="indigo"  title="Indigo" aria-label="Indigo accent"></button>
+        <button type="button" class="theme-dot" data-theme="ocean"   title="Ocean" aria-label="Ocean accent"></button>
+        <button type="button" class="theme-dot" data-theme="emerald" title="Emerald" aria-label="Emerald accent"></button>
+        <button type="button" class="theme-dot" data-theme="rose"    title="Rose" aria-label="Rose accent"></button>
+        <button type="button" class="theme-dot" data-theme="amber"   title="Amber" aria-label="Amber accent"></button>
+      </div>
+      <button type="button" class="lang-toggle" id="lang-toggle" aria-label="Switch language"><i class="fas fa-language"></i><span class="lang-en">中文</span><span class="lang-zh">EN</span></button>
+    </div>
+    <div class="floating-controls">
+      <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+    </div>
+
     {% include scripts.html %}
 
+    <script>
+    (function () {
+      // ---- Language toggle (EN / 中文), persisted in localStorage ----
+      var saved = null;
+      try { saved = localStorage.getItem('site-lang'); } catch (e) {}
+      if (/[?&]lang=zh\b/.test(location.search)) { saved = 'zh'; }
+      else if (/[?&]lang=en\b/.test(location.search)) { saved = 'en'; }
+      function applyLang(lang) {
+        var zh = lang === 'zh';
+        document.body.classList.toggle('zh', zh);
+        document.documentElement.setAttribute('lang', zh ? 'zh-CN' : 'en');
+        try { localStorage.setItem('site-lang', lang); } catch (e) {}
+      }
+      applyLang(saved === 'zh' ? 'zh' : 'en');
+      var langBtn = document.getElementById('lang-toggle');
+      if (langBtn) {
+        langBtn.addEventListener('click', function () {
+          applyLang(document.body.classList.contains('zh') ? 'en' : 'zh');
+        });
+      }
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Center Content</title>
-    <style>
-        .centered {
-            text-align: center;
-        }
-        .centered img {
-            display: block;
-            margin: 0 auto;
-        }
-    </style>
-  </head>
+      // ---- Accent theme switcher (Indigo / Ocean / Emerald / Rose / Amber), persisted ----
+      var THEMES = ['indigo', 'ocean', 'emerald', 'rose', 'amber'];
+      var savedTheme = 'indigo';
+      try { var st = localStorage.getItem('site-theme'); if (st && THEMES.indexOf(st) >= 0) { savedTheme = st; } } catch (e) {}
+      var tq = location.search.match(/[?&]theme=(indigo|ocean|emerald|rose|amber)\b/);
+      if (tq) { savedTheme = tq[1]; }
+      var themeDots = [].slice.call(document.querySelectorAll('.theme-dot'));
+      function applyTheme(name) {
+        if (THEMES.indexOf(name) < 0) { name = 'indigo'; }
+        document.documentElement.setAttribute('data-theme', name);
+        try { localStorage.setItem('site-theme', name); } catch (e) {}
+        themeDots.forEach(function (d) { d.classList.toggle('active', d.getAttribute('data-theme') === name); });
+      }
+      applyTheme(savedTheme);
+      themeDots.forEach(function (d) {
+        d.addEventListener('click', function () { applyTheme(this.getAttribute('data-theme')); });
+      });
 
-    
+      // ---- Reading progress bar ----
+      var bar = document.getElementById('scroll-progress-bar');
+      var toTop = document.getElementById('back-to-top');
+      // ---- Scroll-spy: highlight the nav link of the section in view ----
+      var navLinks = [].slice.call(document.querySelectorAll('#site-nav .visible-links a[href*="#"]'));
+      var sections = navLinks.map(function (a) {
+        var id = a.getAttribute('href').split('#')[1];
+        return id ? document.getElementById(id) : null;
+      });
+      function onScroll() {
+        var st = window.pageYOffset || document.documentElement.scrollTop;
+        var h = document.documentElement.scrollHeight - window.innerHeight;
+        if (bar) { bar.style.width = (h > 0 ? (st / h) * 100 : 0) + '%'; }
+        if (toTop) { toTop.classList.toggle('show', st > 600); }
+        var active = -1, mark = st + 120;
+        for (var i = 0; i < sections.length; i++) {
+          if (sections[i] && sections[i].offsetTop <= mark) { active = i; }
+        }
+        for (var j = 0; j < navLinks.length; j++) {
+          navLinks[j].classList.toggle('active', j === active);
+        }
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('resize', onScroll);
+      onScroll();
+      if (toTop) {
+        toTop.addEventListener('click', function () {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+    })();
+    </script>
+
   </body>
 </html>
-
-
-
-<div align="center">
-  <hr/>
-  <div>
-    © 2025 Bin Lin | Last updated: 07/15/2025
-  </div>
-</div>

@@ -1,4 +1,12 @@
 <script>
+    function _fmtCompact(n) {
+        if (n === null || n === undefined) return '';
+        if (n >= 1000) {
+            return (n / 1000).toFixed(1).replace(/\.0$/, '') + 'k';
+        }
+        return '' + n;
+    }
+
     $(document).ready(function () {
         {% if site.google_scholar_stats_use_cdn %}
         var gsDataBaseUrl = 'https://cdn.jsdelivr.net/gh/{{ site.repository }}@'
@@ -6,13 +14,50 @@
         var gsDataBaseUrl = 'https://raw.githubusercontent.com/{{ site.repository }}/'
         {% endif %}
         $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
-            // var totalCitation = data['citedby']
-            // document.getElementById('total_cit').innerHTML = totalCitation;
+            var totalCitation = data['citedby']
+            var citationStatEl = document.getElementById('citations-stat')
+            if (citationStatEl && totalCitation) {
+                var rounded = Math.floor(totalCitation / 100) * 100;
+                citationStatEl.innerHTML = rounded.toLocaleString('en-US') + '+';
+            }
             var citationEles = document.getElementsByClassName('show_paper_citations')
             Array.prototype.forEach.call(citationEles, element => {
                 var paperId = element.getAttribute('data')
-                var numCitations = data['publications'][paperId]['num_citations']
-                element.innerHTML = '| Citations: ' + numCitations;
+                try {
+                    var numCitations = data['publications'][paperId]['num_citations']
+                    element.innerHTML = numCitations;
+                } catch (e) {}
+            });
+
+            // Rounded-down "N00+" per-paper citation (e.g. for the Video-LLaVA highlight)
+            var roundedEles = document.getElementsByClassName('cite-rounded')
+            Array.prototype.forEach.call(roundedEles, element => {
+                var paperId = element.getAttribute('data')
+                try {
+                    var n = data['publications'][paperId]['num_citations']
+                    if (typeof n === 'number' && n > 0) {
+                        element.innerHTML = (Math.floor(n / 100) * 100).toLocaleString('en-US') + '+';
+                    }
+                } catch (e) {}
+            });
+        });
+
+        // Live GitHub stars for each .gh-stars[data-repo] chip (cached 6h to avoid rate limits)
+        var STAR_TTL = 6 * 60 * 60 * 1000;
+        function renderStars(el, n) { el.innerHTML = '<i class="fas fa-star"></i> ' + _fmtCompact(n); }
+        var starEles = document.getElementsByClassName('gh-stars');
+        Array.prototype.forEach.call(starEles, function (el) {
+            var repo = el.getAttribute('data-repo');
+            if (!repo) return;
+            var cached = null;
+            try { cached = JSON.parse(localStorage.getItem('ghstars:' + repo)); } catch (e) {}
+            if (cached && typeof cached.n === 'number') { renderStars(el, cached.n); }
+            if (cached && cached.t && (Date.now() - cached.t) < STAR_TTL) return;
+            $.getJSON('https://api.github.com/repos/' + repo, function (d) {
+                if (d && typeof d.stargazers_count === 'number') {
+                    renderStars(el, d.stargazers_count);
+                    try { localStorage.setItem('ghstars:' + repo, JSON.stringify({ n: d.stargazers_count, t: Date.now() })); } catch (e) {}
+                }
             });
         });
     })
