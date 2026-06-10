@@ -319,6 +319,33 @@ redirect_from:
   <div class="edu-what"><span class="deg"><span class="lang-en">B.E. — Outstanding Graduate, ranked 1st / 263</span><span class="lang-zh">工学学士 —— 优秀毕业生，年级第 1 / 263</span></span><br><span class="school"><span class="lang-en">Sichuan Agricultural University</span><span class="lang-zh">四川农业大学</span></span></div>
 </div>
 
+<div class="section-head"><span class="eyebrow">🛠️</span><h2 id="service"><span class="lang-en">Academic Service</span><span class="lang-zh">学术服务</span></h2></div>
+
+<div class="svc">
+  <div class="svc-row">
+    <div class="svc-label"><span class="lang-en">Conference Reviewer</span><span class="lang-zh">会议审稿人</span></div>
+    <div class="svc-chips">
+      <span class="svc-chip">ICLR 2026</span>
+      <span class="svc-chip">NeurIPS 2026</span>
+      <span class="svc-chip">ICML 2026</span>
+      <span class="svc-chip">CVPR 2026</span>
+      <span class="svc-chip">ECCV 2026</span>
+    </div>
+  </div>
+  <div class="svc-row">
+    <div class="svc-label"><span class="lang-en">Journal Reviewer</span><span class="lang-zh">期刊审稿人</span></div>
+    <div class="svc-chips">
+      <span class="svc-chip">IEEE TPAMI</span>
+    </div>
+  </div>
+  <div class="svc-row">
+    <div class="svc-label"><span class="lang-en">Workshop Organizer</span><span class="lang-zh">研讨会组织</span></div>
+    <div class="svc-body">
+      <span class="lang-en">Working Committee, <a href="https://sites.google.com/view/aaai26-cvm/organizer" target="_blank" rel="noopener">CVM @ AAAI 2026 Workshop</a> — <em>Consistency in Video Generative Models: From Clip to Wild</em>, featuring a video-generation <a href="https://sites.google.com/view/aaai26-cvm" target="_blank" rel="noopener">competition</a>.</span><span class="lang-zh">工作委员会成员，<a href="https://sites.google.com/view/aaai26-cvm/organizer" target="_blank" rel="noopener">CVM @ AAAI 2026 研讨会</a>——<em>视频生成模型的一致性：从片段到真实场景</em>，并举办视频生成<a href="https://sites.google.com/view/aaai26-cvm" target="_blank" rel="noopener">竞赛</a>。</span>
+    </div>
+  </div>
+</div>
+
 <script>
 (function () {
   function each(list, fn) { for (var i = 0; i < list.length; i++) { fn(list[i]); } }

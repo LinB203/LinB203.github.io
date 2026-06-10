@@ -27,3 +27,7 @@ main:
   - title: "Education"
     title_zh: "教育"
     url: "/#education"
+
+  - title: "Service"
+    title_zh: "服务"
+    url: "/#service"

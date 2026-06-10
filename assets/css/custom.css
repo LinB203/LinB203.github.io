@@ -574,6 +574,36 @@ a.chip.chip-hf:hover { color: #d97706 !important; border-color: rgba(255,159,10,
 .edu-card .edu-what .school { color: var(--text-soft); font-size: 0.9rem; }
 
 /* ==========================================================================
+   ACADEMIC SERVICE
+   ========================================================================== */
+.svc { display: flex; flex-direction: column; gap: 14px; margin: 0.2em 0 0.4em; }
+.svc-row { display: flex; gap: 18px; align-items: baseline; }
+.svc-label {
+  flex: 0 0 165px;
+  font-weight: 750;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+.svc-body { flex: 1; min-width: 0; color: var(--text-soft); font-size: 0.92rem; line-height: 1.55; }
+.svc-body em { color: var(--text); font-style: italic; }
+.svc-chips { flex: 1; min-width: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.svc-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 650;
+  color: var(--text-soft);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+}
+@media (max-width: 640px) {
+  .svc-row { flex-direction: column; gap: 8px; }
+  .svc-label { flex-basis: auto; }
+}
+
+/* ==========================================================================
    FOOTER & misc
    ========================================================================== */
 .site-footer-custom {
