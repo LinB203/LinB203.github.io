@@ -1,4 +1,8 @@
 _site/
+.DS_Store
 .bundle/
 vendor/
 .jekyll-cache/
+
+# Local CV / resume LaTeX project (packaged separately for Overleaf)
+cv/

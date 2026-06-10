@@ -63,7 +63,7 @@ redirect_from:
     </a>
 
     <div class="stats">
-      <a class="stat" href="https://scholar.google.com/citations?user=GCOVDKoAAAAJ&hl=en" target="_blank" rel="noopener"><div class="num" id="citations-stat">4,700+</div><div class="lbl"><span class="lang-en">Citations</span><span class="lang-zh">总引用量</span></div></a>
+      <a class="stat" href="https://scholar.google.com/citations?user=GCOVDKoAAAAJ&hl=en" target="_blank" rel="noopener"><div class="num" id="citations-stat">4,700+</div><div class="lbl"><span class="lang-en">Citations</span><span class="lang-zh">总引用量</span></div><div class="stat-period"><span class="lang-en">1 paper 1,700+ · 7 papers 100+</span><span class="lang-zh">1 篇 1,700+ · 7 篇 100+</span></div></a>
       <a class="stat" href="https://github.com/LinB203" target="_blank" rel="noopener"><div class="num">20K+</div><div class="lbl"><span class="lang-en">GitHub Stars</span><span class="lang-zh">GitHub Stars</span></div></a>
       <a class="stat" href="https://huggingface.co/LanguageBind" target="_blank" rel="noopener"><div class="num">14M+</div><div class="lbl"><span class="lang-en">Model &amp; Data Downloads</span><span class="lang-zh">模型与数据下载</span></div></a>
       <a class="stat" href="https://huggingface.co/spaces/TCTF/TCTF" target="_blank" rel="noopener"><div class="num">Top 100</div><div class="lbl"><span class="lang-en">Hugging Face Influencer</span><span class="lang-zh">Hugging Face 影响力</span></div><div class="stat-period">2024.02–2025.01</div></a>
@@ -112,7 +112,7 @@ redirect_from:
     <video class="autoplay-video" src="images/osp.mp4" autoplay muted loop playsinline webkit-playsinline controlslist="nodownload noplaybackrate" preload="metadata"></video>
   </div>
   <div class="feat-info">
-    <div class="feat-badges"><span class="feat-venue">Preprint</span><span class="role role-cofirst"><span class="lang-en">Co-First Author</span><span class="lang-zh">共同一作</span></span></div>
+    <div class="feat-badges"><span class="feat-venue">Preprint</span><span class="role role-cofirst"><span class="lang-en">Co-First Author</span><span class="lang-zh">共同一作</span></span><a class="accolade" href="https://trendshift.io/repositories/8280" target="_blank" rel="noopener"><i class="fas fa-trophy"></i> <span class="lang-en">#1 GitHub Trending</span><span class="lang-zh">GitHub 趋势榜第一</span></a></div>
     <h3 class="feat-title"><a href="https://arxiv.org/abs/2412.00131">Open-Sora Plan: Open-Source Large Video Generation Model</a></h3>
     <p class="feat-authors"><span class="me">Bin Lin*</span>, Yunyang Ge*, Xinhua Cheng*, et al., Li Yuan</p>
     <p class="feat-desc"><span class="lang-en">A fully open recipe for large-scale video generation — causal video VAE, 3D / sparse attention, and complete training pipelines. <span class="hl">The first open model trained from scratch natively on NPUs (v1.5).</span></span><span class="lang-zh">面向大规模视频生成的全开放方案——因果视频 VAE、3D / 稀疏注意力以及完整的训练流程。<span class="hl">首个原生在 NPU 上从零训练的开源模型（v1.5）。</span></span></p>
@@ -131,7 +131,7 @@ redirect_from:
     <video class="autoplay-video" src="images/uniworld.mp4" autoplay muted loop playsinline webkit-playsinline controlslist="nodownload noplaybackrate" preload="metadata"></video>
   </div>
   <div class="feat-info">
-    <div class="feat-badges"><span class="feat-venue">Preprint</span><span class="role role-first"><span class="lang-en">First Author</span><span class="lang-zh">第一作者</span></span></div>
+    <div class="feat-badges"><span class="feat-venue">Preprint</span><span class="role role-first"><span class="lang-en">First Author</span><span class="lang-zh">第一作者</span></span><a class="accolade" href="https://trendshift.io/repositories/20448" target="_blank" rel="noopener"><i class="fas fa-trophy"></i> <span class="lang-en">#9 GitHub Trending</span><span class="lang-zh">GitHub 趋势榜第 9</span></a></div>
     <h3 class="feat-title"><a href="https://arxiv.org/abs/2506.03147">UniWorld-V1: High-Resolution Semantic Encoders for Unified Visual Understanding and Generation</a></h3>
     <p class="feat-authors"><span class="me">Bin Lin</span>, Zongjian Li, Xinhua Cheng, et al., Li Yuan</p>
     <p class="feat-desc"><span class="lang-en">One unified model for visual <span class="hl">understanding, generation, and manipulation</span> — 2.7M curated samples powering 20+ tasks within a single framework.</span><span class="lang-zh">单一统一模型即可完成视觉<span class="hl">理解、生成与编辑</span>——以 270 万条精选数据，在同一框架内支撑 20+ 种任务。</span></p>
@@ -150,7 +150,7 @@ redirect_from:
     <img src="images/video-llava.jpg" alt="Video-LLaVA">
   </div>
   <div class="feat-info">
-    <div class="feat-badges"><span class="feat-venue">EMNLP 2025</span><span class="role role-first"><span class="lang-en">First Author</span><span class="lang-zh">第一作者</span></span></div>
+    <div class="feat-badges"><span class="feat-venue">EMNLP 2025</span><span class="role role-first"><span class="lang-en">First Author</span><span class="lang-zh">第一作者</span></span><a class="accolade" href="https://trendshift.io/repositories/5183" target="_blank" rel="noopener"><i class="fas fa-trophy"></i> <span class="lang-en">#6 GitHub Trending</span><span class="lang-zh">GitHub 趋势榜第 6</span></a></div>
     <h3 class="feat-title"><a href="https://arxiv.org/abs/2311.10122">Video-LLaVA: Learning United Visual Representation by Alignment Before Projection</a></h3>
     <p class="feat-authors"><span class="me">Bin Lin</span>, Yang Ye, Bin Zhu, et al., Li Yuan</p>
     <p class="feat-desc"><span class="lang-en"><a class="hl" href="https://resources.paperdigest.org/2025/03/most-influential-emnlp-papers-2025-03-version/" target="_blank" rel="noopener">#1 Most Influential EMNLP 2025 Paper</a> with <span class="cite-rounded" data="GCOVDKoAAAAJ:UebtZRa9Y70C">1,000+</span> citations — reached video-QA SOTA in just two days on a single node.</span><span class="lang-zh"><a class="hl" href="https://resources.paperdigest.org/2025/03/most-influential-emnlp-papers-2025-03-version/" target="_blank" rel="noopener">EMNLP 2025 最具影响力论文第 1 名</a>，引用量 <span class="cite-rounded" data="GCOVDKoAAAAJ:UebtZRa9Y70C">1,000+</span>——在单机上仅用两天即达到视频问答 SOTA。</span></p>
@@ -169,9 +169,8 @@ redirect_from:
 
 <ul class="pub-list">
   <li>
-    <span class="pub-tag">IEEE TMM</span><span class="role role-first"><span class="lang-en">First Author</span><span class="lang-zh">第一作者</span></span>
+    <span class="pub-tag">IEEE TMM</span><span class="role role-first"><span class="lang-en">First Author</span><span class="lang-zh">第一作者</span></span><a class="accolade" href="https://trendshift.io/repositories/7401" target="_blank" rel="noopener"><i class="fas fa-trophy"></i> <span class="lang-en">#6 GitHub Trending</span><span class="lang-zh">GitHub 趋势榜第 6</span></a>
     <a class="pub-row-title" href="https://arxiv.org/abs/2401.15947">MoE-LLaVA: Mixture of Experts for Large Vision-Language Models</a>.
-    <span class="me">Bin Lin</span>, Zhenyu Tang, Yang Ye, et al., Li Yuan.
     <span class="pub-desc"><span class="lang-en">The first sparse multimodal LLM trainable on a single node.</span><span class="lang-zh">首个可在单机上训练的稀疏多模态大模型。</span></span>
     <div class="meta">
       <a class="chip chip-arxiv" href="https://arxiv.org/abs/2401.15947"><i class="fas fa-file-alt"></i> arXiv</a>
@@ -183,7 +182,6 @@ redirect_from:
   <li>
     <span class="pub-tag">CVPR 2025</span><span class="role role-cofirst"><span class="lang-en">Co-First Author</span><span class="lang-zh">共同一作</span></span>
     <a class="pub-row-title" href="https://arxiv.org/abs/2411.17459">WF-VAE: Enhancing Video VAE by Wavelet-Driven Energy Flow for Latent Video Diffusion</a>.
-    Zongjian Li*, <span class="me">Bin Lin*</span>, et al., Li Yuan.
     <span class="pub-desc"><span class="lang-en">A wavelet-driven video VAE with higher compression efficiency and reconstruction quality.</span><span class="lang-zh">小波驱动的视频 VAE，兼具更高的压缩效率与重建质量。</span></span>
     <div class="meta">
       <a class="chip chip-arxiv" href="https://arxiv.org/abs/2411.17459"><i class="fas fa-file-alt"></i> arXiv</a>
@@ -195,7 +193,6 @@ redirect_from:
   <li>
     <span class="pub-tag">ICLR 2024</span><span class="role role-cofirst"><span class="lang-en">Co-First Author</span><span class="lang-zh">共同一作</span></span>
     <a class="pub-row-title" href="https://arxiv.org/abs/2310.01852">LanguageBind: Extending Video-Language Pretraining to N-modality by Language-based Semantic Alignment</a>.
-    Bin Zhu*, <span class="me">Bin Lin*</span>, et al., Li Yuan.
     <span class="pub-desc"><span class="lang-en">Binds N modalities through language, enabling unified cross-modal pretraining and retrieval.</span><span class="lang-zh">以语言为桥连接 N 种模态，实现统一的跨模态预训练与检索。</span></span>
     <div class="meta">
       <a class="chip chip-arxiv" href="https://arxiv.org/abs/2310.01852"><i class="fas fa-file-alt"></i> arXiv</a>
@@ -207,7 +204,6 @@ redirect_from:
   <li>
     <span class="pub-tag">NeurIPS 2025</span><span class="role role-cofirst"><span class="lang-en">Co-First Author</span><span class="lang-zh">共同一作</span></span>
     <a class="pub-row-title" href="https://arxiv.org/abs/2505.20275">ImgEdit: A Unified Image Editing Dataset and Benchmark</a>.
-    Yang Ye*, Xianyi He*, Zongjian Li*, <span class="me">Bin Lin*</span>, et al.
     <span class="pub-desc"><span class="lang-en">A 1.2M-pair image-editing dataset and benchmark, with the ImgEdit-E1 editing model.</span><span class="lang-zh">包含 120 万对样本的图像编辑数据集与基准，并提供 ImgEdit-E1 编辑模型。</span></span>
     <div class="meta">
       <a class="chip chip-arxiv" href="https://arxiv.org/abs/2505.20275"><i class="fas fa-file-alt"></i> arXiv</a>
@@ -219,7 +215,6 @@ redirect_from:
   <li>
     <span class="pub-tag">ICML 2026</span><span class="role role-coauthor"><span class="lang-en">Co-Author</span><span class="lang-zh">合作作者</span></span>
     <a class="pub-row-title" href="https://arxiv.org/abs/2503.07265">WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation</a>.
-    Yuwei Niu, Munan Ning, Mengren Zheng, <span class="me">Bin Lin</span>, et al.
     <span class="pub-desc"><span class="lang-en">A world-knowledge-informed benchmark for evaluating text-to-image generation.</span><span class="lang-zh">引入世界知识的文本到图像生成评测基准。</span></span>
     <div class="meta">
       <a class="chip chip-arxiv" href="https://arxiv.org/abs/2503.07265"><i class="fas fa-file-alt"></i> arXiv</a>
@@ -231,7 +226,6 @@ redirect_from:
   <li>
     <span class="pub-tag">NeurIPS 2024</span><span class="role role-coauthor"><span class="lang-en">Co-Author</span><span class="lang-zh">合作作者</span></span>
     <a class="pub-row-title" href="https://arxiv.org/abs/2406.04325">ShareGPT4Video: Improving Video Understanding and Generation with Better Captions</a>.
-    Lin Chen, Xilin Wei, &hellip;, <span class="me">Bin Lin</span>, et al.
     <span class="pub-desc"><span class="lang-en">Boosts video understanding and generation with dense, high-quality captions.</span><span class="lang-zh">借助密集且高质量的视频描述，提升视频理解与生成能力。</span></span>
     <div class="meta">
       <a class="chip chip-arxiv" href="https://arxiv.org/abs/2406.04325"><i class="fas fa-file-alt"></i> arXiv</a>
